@@ -23,9 +23,11 @@ routes.delete('/fornecedores/:cnpj', FornecedorController.delete);
 routes.get('/produtos', ProdutoController.index);
 routes.post('/produtos', ProdutoController.store);
 routes.delete('/produtos/:id', ProdutoController.delete);
+routes.put('/produtos/:id', ProdutoController.put);
 
 routes.get('/fechamentos', FechamentoController.index);
 routes.post('/fechamentos', FechamentoController.store);
 routes.delete('/fechamentos/:id', FechamentoController.delete);
+routes.put('/fechamentos/:id', FechamentoController.put);
 
 module.exports = routes;

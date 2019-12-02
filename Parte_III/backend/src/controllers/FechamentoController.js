@@ -33,6 +33,29 @@ module.exports = {
 
         return res.json();
 
+    },
+
+    async put(req, res) {
+        const { id } = req.params;
+
+        const { dinheiro } = req.body;
+
+        const fechamento = await Fechamento.findByPk(id);
+
+        if (!fechamento) {
+            return res.status(400).json({ error: 'Product not found ' });
+        }
+
+        fechamento.update({
+            dinheiro : dinheiro
+        }, {
+            where: {
+                id: id
+            }
+        });
+
+        return res.json();
+
     }
 
 }

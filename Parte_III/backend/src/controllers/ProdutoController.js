@@ -36,6 +36,30 @@ module.exports = {
         })
 
         return res.json();
+    },
+
+    async put(req, res) {
+        const { id } = req.params;
+
+        const { nome, desc, preco, quantidade, nome_fornecedor } = req.body;
+
+        const produto = await Produto.findByPk(id);
+
+        if (!produto) {
+            return res.status(400).json({ error: 'Product not found ' });
+        }
+
+        produto.update({
+            nome: nome, desc: desc, preco: preco,
+            quantidade: quantidade, nome_fornecedor: nome_fornecedor,
+        }, {
+            where: {
+                id: id
+            }
+        });
+
+        return res.json();
+
     }
 
 }
