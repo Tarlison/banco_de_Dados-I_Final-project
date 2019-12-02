@@ -1,0 +1,125 @@
+body, input, button{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.listaClose{
+  height: 100%;
+  width: 100%;
+  background: url('../../assets/cadBG2.jpg');
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.container-closure{
+  float: left;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  overflow-y: scroll;
+}
+
+#title{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#listaClose{
+  align-items: center;
+  text-align: center;
+  border-collapse: collapse;
+  border: 3px solid #ddd;
+  width: 1000px;
+
+}
+
+#listaClose td, #listaClose th{
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#listaClose tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+
+#listaClose tr:nth-child(odd){
+  background-color: #9ea2a5;
+}
+
+#listaClose tr:hover{
+  background-color: #ddd;
+}
+
+
+#listaClose th{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #4caf50;
+  color: white;
+}
+
+.DeleteButton{
+  border: 0;
+  border-radius: 2px;
+  background: rgb(175, 8, 8);
+  color: #fff;
+  font-weight: bold;
+  height: 25px;
+}
+
+.EditButton{
+  border: 0;
+  border-radius: 2px;
+  background: rgb(86, 8, 175);
+  color: #fff;
+  font-weight: bold;
+  height: 25px;
+}
+
+.returnBC{
+  border: 0;
+  border-radius: 2px;
+  width: 200px;
+  height: 40px;
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;;
+  background: #ffffff;
+  color: #2c2fd8;
+  cursor: pointer;
+}
+
+.addBC{
+  border: 0;
+  border-radius: 2px;
+  width: 200px;
+  height: 40px;
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;;
+  background: #01a136;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.returnBC:hover{
+  background:  #2c2fd8;
+  color: #fff;
+}
+
+.addBC:hover{
+  background:  #fff;
+  color: #01a136;
+}
+
+.lastRow{
+  background-color: white;
+}

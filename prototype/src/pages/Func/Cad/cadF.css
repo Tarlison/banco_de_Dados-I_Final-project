@@ -1,0 +1,108 @@
+
+
+body, input, button{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.cadastroFunc{
+  height: 100%;
+  background: url('../../../assets/cadBG2.jpg');
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+}
+
+.pageTitle{
+  height: 100px;
+  float: left;
+  margin: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+
+}
+
+.pageTitle p{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+
+}
+
+.containerCadFunc{
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  margin-bottom: auto;
+  max-height: 500px;
+  float: right;
+  margin-right: 50px;
+  max-width: 500px;
+  width: 100%;
+  align-items: center;
+}
+
+.buttonContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.conteudo-cadFunc{
+  height: 500px;
+  border-radius: 4px;
+  padding: 30px;
+  width: 400px;
+
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.conteudo-cadFunc form{
+  display: flex;
+  flex-direction: column;
+}
+
+.conteudo-cadFunc form label{
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.conteudo-cadFunc form label span{
+  font-weight: normal;
+  color: #999;
+  font-size: 12px;
+}
+
+.conteudo-cadFunc form input{
+  margin-bottom: 20px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  height: 45px;
+  padding: 0 15px;
+  font-size: 16px;
+}
+
+.conteudo-cadFunc button.btn{
+  margin-right: 5px;
+  margin-left: 5px;
+  border: 1px solid #000;
+  border-radius: 2px;
+  width: 100%;
+  height: 45px;
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;;
+  background: #FFF;
+  color: #2c2fd8;
+  cursor: pointer;
+}
+
+.conteudo-cadFunc button.btn:hover{
+  background: #2c2fd8;
+  color: #fff;
+}
